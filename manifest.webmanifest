@@ -1,0 +1,15 @@
+{
+    "name": "Write",
+    "short_name": "Write",
+    "start_url": "Pages/write.php",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "A notes app.",
+    "icons": [
+      {
+        "src": "./img/logo512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }

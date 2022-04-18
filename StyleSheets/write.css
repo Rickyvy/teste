@@ -1,0 +1,441 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+    max-height: 915px;
+    max-width: 412px;
+    background-color: #000;
+}
+a {
+    -webkit-tap-highlight-color: transparent !important;
+
+    outline: none !important;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 412px;
+    max-height: 915px;
+}
+
+input {
+    text-indent: 10px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+}
+
+h1 {
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 30px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.white-line {
+    position: fixed;
+    bottom: 0;
+    width: 45%;
+    background-color: #fff;
+    height: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.login-mainContent {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    background-color: rgb(240, 239, 239);
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 10px;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.regist-mainContent {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    background-color: rgb(240, 239, 239);
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 10px;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.all {
+    opacity: 1;
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    animation: 1s ease-out 0s 1 slideInFromdown;
+    z-index: 1;
+}
+
+.all2 {
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.all3 {
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.sign-ops {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-btn {
+    display: flex;
+    margin-right: auto;
+    margin-left: 45px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 15px;
+}
+
+.signup-btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: 45px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 15px;
+}
+
+.h2-recoverPass {
+    color: rgba(0, 0, 0, 0.808);
+    margin-top: 15px;
+    text-decoration: underline rgba(0, 0, 0, 0.644);
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 25px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.input-email {
+    width: 85%;
+    margin-bottom: 15px;
+    border: 0;
+    height: 40px;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.input-username {
+    width: 85%;
+    margin-bottom: 15px;
+    border: 0;
+    height: 40px;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.input-pass {
+    width: 85%;
+    margin-bottom: 15px;
+    border: 0;
+    height: 40px;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.sp1 {
+    border: 1px solid #707070;
+    background-color: rgb(204, 202, 202);
+    width: 40%;
+    height: 3px;
+}
+
+.sp2 {
+    border: 1px solid #707070;
+    background-color: rgb(204, 202, 202);
+    width: 40%;
+    height: 3px;
+}
+
+.separations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.sp-text {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #000;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 15px;
+}
+
+.email {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signin-email {
+    width: 85%;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.email-text {
+    position: absolute;
+    height: 40px;
+    width: 85%;
+    color: #000;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 15px;
+    border: 0;
+    background-color: transparent;
+}
+
+.email-icon {
+    margin-right: auto;
+    margin-left: 15%;
+}
+
+.sign-inf {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.signinf-btn {
+    width: 85%;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.forgot-p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.forgot-pass {
+    text-decoration: underline;
+    border: 0;
+    color: #000;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 12px;
+}
+
+.black-line {
+    position: absolute;
+    display: flex;
+    width: 45%;
+    background-color: #000;
+    height: 5px;
+    margin-bottom: 1px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    border-radius: 5px;
+}
+
+.title2 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+}
+
+#signin_id {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#signup_id {
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#forgotPass_id {
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+
+/**/
+
+@keyframes slideInFromdown {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100);
+    }
+}
+
+.slideUp {
+    animation: 1s ease-out 0s 2 slideInFromdown;
+    transform: none;
+}
+
+#errors{
+    position: absolute;
+    top: 0;
+    margin-top: 90px;
+    width: 90%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p_error{
+    color: #cc0000;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.hide{
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}

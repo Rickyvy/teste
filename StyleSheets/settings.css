@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    -webkit-tap-highlight-color: transparent !important;
+
+    outline: none !important;
+    text-decoration: none;
+}
+
+body {
+    max-width: 412px;
+    max-height: 915px;
+    background-color: #000;
+    animation: fadeInAnimation ease 2s 1;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.h1_title {
+    background-color: #141414;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    margin-top: 15%;
+    margin-bottom: 5px;
+}
+
+.options {
+    background-color: #1a1a1abe;
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+}
+
+.theme {
+    width: 100%;
+    height: 40px;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.change-name {
+    width: 100%;
+    height: 40px;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.change-email {
+    width: 100%;
+    height: 40px;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.change-pass {
+    width: 100%;
+    height: 40px;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.logout {
+    width: 100%;
+    height: 40px;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+.p-theme {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.p-changename {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.p-changeemail {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.p-changepass {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.p-logout {
+    margin-right: auto;
+    margin-left: 10px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.arrow {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    background-color: #141414;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.documents {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    opacity: 0.2;
+}
+
+.folder-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.btn-doc {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 15px;
+}
+
+.readerMode {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.2;
+}
+
+.book-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.btn-reader {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 15px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    opacity: 1;
+}
+
+.btn-settings {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 15px;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+    opacity: 0.2;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.486);
+    font-family: 'Syne Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 30px;
+}
